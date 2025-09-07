@@ -1,0 +1,127 @@
+#container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-top: none;
+    border-bottom: none;
+    overflow: hidden;
+}
+
+#setting {
+    height: 10%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    user-select: none;
+}
+
+
+button {
+    border-radius: 5px;
+    padding: 1% 3%;
+    font-size: 1em;
+    letter-spacing: 10px;
+    font-weight: 800;
+}
+
+.hidde {
+    display: none;
+}
+
+.photon {
+    position: absolute;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 80%;
+    background-color: rgb(229, 210, 8);
+    border: 3px solid rgb(228, 96, 8);
+    transform: translate(-50%, -50%);
+}
+
+#launcher {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+    background-image: url(pilot.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.monster {
+    display: flex;
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    transition: width 1s, height 1s, opacity 1s;
+    will-change: opacity;
+    background-image: url(UFO.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.damageMeter {
+    position: absolute;
+    width: 80px;
+    height: 10px;
+    background-color: cadetblue;
+    border-radius: 10%;
+    top: -50%;
+}
+
+.damageAmount {
+    position: absolute;
+    width: 70px;
+    height: 10px;
+    background-color: #00FF00;
+    border-radius: 10%;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#opening {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: rgb(1, 6, 18);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10%;
+    justify-items: center;
+    align-content: center;
+    z-index: 3;
+}
+
+h1 {
+    font-size: 4em;
+    color: antiquewhite;
+    letter-spacing: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button {
+    position: absolute;
+    left: 50%;
+    margin-top: 1.5em;
+    font-size: 3em;
+    transform: translate(-50%, -50%);
+}
